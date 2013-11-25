@@ -1,3 +1,4 @@
+﻿robson testando
 Relatorio de acompanhamento da instalação do operacional MINIX 3 no Daruma
 
 12/11
