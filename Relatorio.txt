@@ -1,5 +1,7 @@
-﻿robson testando
+
 Relatorio de acompanhamento da instalação do operacional MINIX 3 no Daruma
+
+quem manda aqui é a xuxa
 
 12/11
 Início da leitura do livro LINUX FROM SCRATCH (VERSÃO EM PORTUGUES)
