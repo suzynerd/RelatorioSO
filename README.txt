@@ -1,12 +1,5 @@
 Relatorio de acompanhamento da instalação do operacional MINIX 3 no Daruma
 
-12/11
-Início da leitura do livro LINUX FROM SCRATCH (VERSÃO EM PORTUGUES)
-Fonte de apoio: http://goo.gl/7pHA8y
-Tentativa de emular o sistema operacional montado LFS realizada com sucesso.
-
-
-13/11
-Instalação do SO UBUNTU na máquina virtual para prosseguir com os passos do LFS Book.
-O KERNEL do sistema anfitrião é compatível com  as exigências 
+IFRN | DIATINF | TADS | 2013.2 | SISTEMAS OPERACIONAIS | PROF. LEONARDO MINORA
+ALUNOS: ADOLFO, SUZYANNE, ROBSON E JACKSON
 
