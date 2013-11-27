@@ -38,3 +38,15 @@ Duas novas particões foram criadas, dividindo a memória em partes iguais, send
 Observação: Após alteração das partições do da Virtul Machine (VM), a linha de comando segue apresentando erros de inicialização e não reconhece o vinculo do sudoers para autenticação do comando sudo.
 
 -----------------------
+
+Maquina virtual quebrada. Realização do processo de instalação de novo SO virtualizado (nome: tads2).
+
+-----------------------
+26/11
+
+Continuação de estudos sobre particionamento.
+
+Criação de novo disco virtualizado pela Virtualbox com tamanho de 40G
+
+divisão do novo disco em 4 partições através do
+	fdisk /dev/sdb
