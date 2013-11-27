@@ -50,3 +50,23 @@ Criação de novo disco virtualizado pela Virtualbox com tamanho de 40G
 
 divisão do novo disco em 4 partições através do
 	fdisk /dev/sdb
+
+27/11
+
+2.3 Formatação de partições e arquivo de sistema
+
+Partição /dev/sdb1 formatada em ext4,
+criação e formatação de swap de 2GB em dev/sdb5
+	mkswap /dev/sdb5
+
+Obs.: sdb2 deletada
+
+2.4 Montando nova partição
+
+escolhido o ponto de montagem /mnt/lfs para exportar a variável de ambiente LFS
+	export LFS=/mnt/lfs
+
+criado o ponto de montagem do arquivo de sistema
+	mkdir -pv $lfs
+e montado em
+	mount -v -t ext4 /dev/sdb1 $LFS
