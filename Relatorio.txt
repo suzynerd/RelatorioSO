@@ -70,3 +70,19 @@ criado o ponto de montagem do arquivo de sistema
 	mkdir -pv $lfs
 e montado em
 	mount -v -t ext4 /dev/sdb1 $LFS
+
+---
+
+02/12/2013
+
+Criação de diretório de trabalho a partir do comando:
+
+	mkdir -v $LFS/sources 
+
+Em seguida, pasta modificada a partir do comando chmod, a fim de torná-la "writable" e Sticky. Um diretório Sticky, mesmo provendo permissão de escrita a vários usuários, somente pode ter arquivos deletados pelo usuário que o criou.
+	
+	chmod -v a+wt $LFS/sources 
+
+Packages e patches baixados utilizando o comando wget. Este fornece baixa arquivos de uma rede de forma não iterativa, utilizando protocolos http, https, ftp e proxies http. O comando é geralmente associado à função de download recursivo.
+
+(adicionar erro 3.1)
