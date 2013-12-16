@@ -1,4 +1,4 @@
-Relatorio de acompanhamento da instalação do sistema operacional MINIX 3 no Daruma
+﻿Relatorio de acompanhamento da instalação do sistema operacional MINIX 3 no Daruma
 
 12/11
 Início da leitura do livro LINUX FROM SCRATCH (VERSÃO EM PORTUGUES)
@@ -91,3 +91,43 @@ Devido a problemas com a máquina onde a virtualização estava sendo rodada, op
 
 Nova máquina virtual criada (Ubuntu 12.04) e passos efetuados anteriormente refeitos.
 seguindo para a o capítulo 4: Final Preparations.
+
+----
+16/12/2013
+
+criação do diretório tools em $LFS
+	mkdir -v $LFS/tools
+
+através do comando ln, um link simbólico no sistema principal para a pasta recém-criada tools será feito
+
+Criação de novo grupo de usuários no qual será criado um usuário sem privliégios root.
+	groupadd lfs2
+	useradd -s /bin/bash -g lfs2 -m -k /dev/null lfs2
+
+Criação de novo usuário 'lfs2' (no grupo lfs2) que será usado para a compilação dos pacotes, por não ter permissões root, evitando danificar o pc.
+
+o usuário lfs2 tem acesso irrestrito garantido às pastas tools e sources através do comando:
+	chown -v lfs2 $LFS/tools
+	chown -v lfs2 $LFS/sources
+
+
+4.4 Configurando o ambiente
+definição de dois arquivos base para o shell do interpretador de comandos 'bash':
+	cat > ~/.bash_profile << "EOF"
+	exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash
+	EOF
+
+	cat > ~/.bashrc << "EOF"
+	set +h
+	umask 022
+	LFS=/mnt/lfs
+	LC_ALL=POSIX
+	LFS_TGT=$(uname -m)-lfs-linux-gnu
+	PATH=/tools/bin:/bin:/usr/bin
+	export LFS LC_ALL LFS_TGT PATH
+	EOF
+
+Para finalizar a preparação, o comando a seguir é executado para informar ao shell em andamento as diretrizes passadas no arquivo de parâmetro:
+	source ~/.bash_profile
+
+
