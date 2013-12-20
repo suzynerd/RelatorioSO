@@ -131,3 +131,8 @@ Para finalizar a preparação, o comando a seguir é executado para informar ao 
 	source ~/.bash_profile
 
 
+20/12/2013
+
+Na etapa 5.3, detalhes importantes foram enfatizados como a criação de links simbolicos para bash, gawk e bison.
+A definição dos links simbolicos causou um loop que impede a procedimentos básicos como a função 'man'.
+A máquina será descartada e Snapshot do dia 16/12 (etapa 4.4) será reutilizado.
