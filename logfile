@@ -26,3 +26,17 @@ chown: cannot access `/mnt/lfs/tools': No such file or directory
 failed to change ownership of `/mnt/lfs/tools' to lfs2
 ownership of `/mnt/lfs/tools' retained as lfs2
 changed ownership of `/mnt/lfs/sources' from root to lfs2
+
+06/01/2014
+mkdir -p -- /tools /tools
+mkdir: cannot create directory `/tools': File exists
+mkdir: cannot create directory `/tools': File exists
+make[1]: *** [installdirs] Error 1
+make[1]: Leaving directory `/mnt/lfs/sources/binutils-build'
+make: *** [install] Error 206/01/2014
+mkdir -p -- /tools /tools
+mkdir: cannot create directory `/tools': File exists
+mkdir: cannot create directory `/tools': File exists
+make[1]: *** [installdirs] Error 1
+make[1]: Leaving directory `/mnt/lfs/sources/binutils-build'
+make: *** [install] Error 2
