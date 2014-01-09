@@ -1,4 +1,4 @@
-﻿Relatorio de acompanhamento da instalação do sistema operacional MINIX 3 no Daruma
+﻿Relatorio de acompanhamento da instalação do sistema operacional Linux no Daruma
 
 12/11
 Início da leitura do livro LINUX FROM SCRATCH (VERSÃO EM PORTUGUES)

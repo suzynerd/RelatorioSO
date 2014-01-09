@@ -1,4 +1,4 @@
-# Comentários serão precedidos com '#'
+﻿# Comentários serão precedidos com '#'
 # O restante do conteúdo foi gerado por redirecionamento de saída
 
 # 13:12:2013
@@ -40,3 +40,5 @@ mkdir: cannot create directory `/tools': File exists
 make[1]: *** [installdirs] Error 1
 make[1]: Leaving directory `/mnt/lfs/sources/binutils-build'
 make: *** [install] Error 2
+
+07/01/2014
